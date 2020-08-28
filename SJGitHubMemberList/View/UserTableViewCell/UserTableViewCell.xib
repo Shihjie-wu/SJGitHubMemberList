@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kTb-CU-hmC" customClass="UserTableViewCell" customModule="SJGitHubMemberList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kTb-CU-hmC" id="TdW-tE-wnh">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5u-5n-adS">
+                        <rect key="frame" x="0.0" y="2.5" width="414" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dLY-jS-2TO">
+                                <rect key="frame" x="20" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="GN3-M8-cPD"/>
+                                    <constraint firstAttribute="width" constant="40" id="ddX-HX-Kzt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZA-Hk-1pN">
+                                <rect key="frame" x="70" y="10" width="334" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MZA-Hk-1pN" firstAttribute="leading" secondItem="dLY-jS-2TO" secondAttribute="trailing" constant="10" id="3BN-51-3PI"/>
+                            <constraint firstAttribute="bottom" secondItem="MZA-Hk-1pN" secondAttribute="bottom" constant="10" id="Fwc-Qk-Tfe"/>
+                            <constraint firstItem="dLY-jS-2TO" firstAttribute="top" secondItem="B5u-5n-adS" secondAttribute="top" constant="10" id="HeY-pv-2kY"/>
+                            <constraint firstAttribute="trailing" secondItem="MZA-Hk-1pN" secondAttribute="trailing" constant="10" id="NMo-q3-bcq"/>
+                            <constraint firstAttribute="bottom" secondItem="dLY-jS-2TO" secondAttribute="bottom" constant="10" id="Tp3-OL-odw"/>
+                            <constraint firstItem="dLY-jS-2TO" firstAttribute="leading" secondItem="B5u-5n-adS" secondAttribute="leading" constant="20" id="bG7-UN-TsK"/>
+                            <constraint firstItem="MZA-Hk-1pN" firstAttribute="top" secondItem="B5u-5n-adS" secondAttribute="top" constant="10" id="xfP-j1-qe7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.10000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="10" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="B5u-5n-adS" firstAttribute="leading" secondItem="TdW-tE-wnh" secondAttribute="leading" id="PPL-qs-XeC"/>
+                    <constraint firstAttribute="bottom" secondItem="B5u-5n-adS" secondAttribute="bottom" constant="2.5" id="Vkt-YV-ANc"/>
+                    <constraint firstItem="B5u-5n-adS" firstAttribute="top" secondItem="TdW-tE-wnh" secondAttribute="top" constant="2.5" id="X8f-px-yCj"/>
+                    <constraint firstAttribute="trailing" secondItem="B5u-5n-adS" secondAttribute="trailing" id="h4Y-eO-JPL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <connections>
+                <outlet property="avatorImageView" destination="dLY-jS-2TO" id="aSj-5K-7Pe"/>
+                <outlet property="nameLabel" destination="MZA-Hk-1pN" id="8gm-b6-ybk"/>
+            </connections>
+            <point key="canvasLocation" x="-184" y="-16"/>
+        </tableViewCell>
+    </objects>
+</document>
